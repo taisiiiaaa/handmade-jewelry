@@ -1,0 +1,30 @@
+.btn {
+  padding: 6px 18px;
+  border: 1px solid #ccc16e;
+  background-color: #ccc16e;
+  font-family: inherit;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  outline: none;
+  transition:
+    background-color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    box-shadow 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: transparent;
+}
+
+.btn:active {
+  background-color: #ccc16e;
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+}
+
+.btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
