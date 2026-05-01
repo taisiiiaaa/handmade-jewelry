@@ -1,0 +1,76 @@
+.about-us.section {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.about-us .container {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  padding: 56px 20px;
+}
+.about-img {
+  margin-bottom: 32px;
+}
+.about-us-img {
+  width: 335px;
+  height: 335px;
+}
+
+.about-description {
+}
+.about-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 24px;
+
+  width: 100%;
+}
+.about-text {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.about-list .about-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.about-item {
+  display: flex;
+
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.about-icon {
+  margin-right: 8px;
+}
+.about-item-text {
+}
+
+@media only screen and (min-width: 768px) {
+  .about-us .container {
+    padding: 112px 32px;
+  }
+
+  .about-title {
+    text-align: center;
+  }
+  .about-text {
+    justify-content: center;
+  }
+
+  .about-us-img {
+    width: 704px;
+    height: 456px;
+  }
+}
