@@ -1,6 +1,6 @@
 .about-us.section {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   background-color: #fff;
 }
 
@@ -19,8 +19,6 @@
   height: 335px;
 }
 
-.about-description {
-}
 .about-title {
   font-family: 'Sora', sans-serif;
   font-weight: 400;
@@ -45,6 +43,7 @@
 
 .about-item {
   display: flex;
+  /* align-items: center; */
 
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
@@ -72,5 +71,41 @@
   .about-us-img {
     width: 704px;
     height: 456px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .about-us.section {
+    background-color: #d8d8d8;
+    padding: 0;
+  }
+
+  .about-us .container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 1312px;
+    height: 456px;
+    /* justify-content: space-between; */
+  }
+
+  .about-title {
+    font-style: 48px;
+  }
+
+  .about-description {
+    text-align: left;
+    width: 704px;
+    padding: 27.5px 32px;
+  }
+
+  .about-us-img {
+    width: 640px;
+    height: 456px;
+  }
+  .about-img {
+    /* width: 100%; */
+    margin-bottom: 0;
   }
 }
