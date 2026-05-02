@@ -1,6 +1,10 @@
+.header {
+  padding-block: 2px;
+}
+
 .nav {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -11,11 +15,20 @@
   color: #000;
 }
 
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.nav-link:active {
+  color: #8668c7;
+}
+
 .nav-list {
   display: none;
 }
 
-.btn {
+.btn-order {
   display: none;
 }
 
@@ -24,10 +37,10 @@
   width: 48px;
   height: 48px;
   border: none;
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
   position: relative;
-  z-index: 100;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,12 +59,13 @@
 /* Burger lines */
 .menu-toggle span {
   position: absolute;
-  width: 20px;
+  width: 16px;
   left: 50%;
   top: 50%;
   height: 2px;
   background-color: #000;
   transform-origin: center;
+  border-radius: 2px;
   transition:
     transform 0.3s ease,
     opacity 0.2s ease;
@@ -93,12 +107,11 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  margin-right: auto;
   padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  .btn {
+  .btn-order {
     display: inline-flex;
     align-items: center;
   }
@@ -115,12 +128,11 @@
   .header {
     padding: 18px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    background: #fff;
+    background-color: #fff;
   }
 
   .nav-list {
     display: flex;
-    flex-direction: row;
     gap: 16px;
     margin-left: 49px;
     margin-right: auto;
