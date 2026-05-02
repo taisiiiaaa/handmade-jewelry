@@ -1,0 +1,109 @@
+.hero {
+  max-width: 375px;
+  padding-top: 160px;
+  padding-bottom: 152px;
+  margin: 0 auto;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-mob@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4)),
+      url ('/img/hero-bg-mob@2x.jpg');
+  }
+}
+
+.hero-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fff;
+
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+
+  margin-bottom: 32px;
+}
+
+.hero-button {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 160px;
+    padding-bottom: 435px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-tab@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-tab@2x.jpg');
+    }
+  }
+
+  .hero-title {
+    max-width: 530px;
+    margin-bottom: 24px;
+  }
+
+  .hero-description {
+    max-width: 530px;
+  }
+
+  .hero-button {
+    width: fit-content;
+    padding: 6px 68px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+    padding-top: 224px;
+    padding-bottom: 360px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-desk@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero {
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-desk@2x.jpg');
+    }
+  }
+
+  .hero-description {
+    max-width: 630px;
+  }
+
+  .hero-button {
+    padding: 6px 55px;
+  }
+}
