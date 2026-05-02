@@ -1,0 +1,140 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.nav-list {
+  display: none;
+}
+
+.btn {
+  display: none;
+}
+
+/* Burger button */
+.menu-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease;
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+}
+
+.menu-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Burger lines */
+.menu-toggle span {
+  position: absolute;
+  width: 20px;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  background-color: #000;
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    opacity 0.2s ease;
+  transform: translate(-50%, -50%);
+}
+
+.menu-toggle span:nth-child(1) {
+  transform: translate(-50%, -50%) translateY(-6px);
+}
+
+.menu-toggle span:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+
+.menu-toggle span:nth-child(3) {
+  transform: translate(-50%, -50%) translateY(6px);
+}
+
+/* Active burger state */
+.menu-toggle.active span:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+.logo-icon {
+  display: block;
+  width: 149px;
+  height: 47px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-left: 49px;
+    margin-right: auto;
+  }
+
+  .logo-icon {
+    width: 84px;
+    height: 36px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .nav-list {
+    gap: 32px;
+    margin-left: 32px;
+  }
+}
