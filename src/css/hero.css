@@ -19,8 +19,7 @@
 @media (min-resolution: 192dpi) {
   .hero {
     background-image:
-      linear-gradient(rgba(0, 0, 0, 0.4)),
-      url ('/img/hero-bg-mob@2x.jpg');
+      linear-gradient(rgba(0, 0, 0, 0.4)), url('/img/hero-bg-mob@2x.jpg');
   }
 }
 
@@ -68,12 +67,11 @@
   }
 
   .hero-title {
-    max-width: 530px;
-    margin-bottom: 24px;
+    max-width: 513px;
   }
 
   .hero-description {
-    max-width: 530px;
+    max-width: 513px;
   }
 
   .hero-button {
@@ -99,8 +97,13 @@
     }
   }
 
+  .hero-title {
+    font-size: 56px;
+    max-width: 640px;
+  }
+
   .hero-description {
-    max-width: 630px;
+    max-width: 640px;
   }
 
   .hero-button {
