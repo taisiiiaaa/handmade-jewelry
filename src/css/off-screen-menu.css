@@ -24,7 +24,7 @@
 
 .off-screen-menu .container {
   height: 100%;
-  padding: 16px 20px 24px;
+  padding-bottom: 16px;
 
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
 .off-screen-menu-logo {
   display: inline-block;
   color: #000;
+  padding-block: 2px;
 }
 
 .off-screen-menu-logo-icon {
@@ -43,7 +44,7 @@
 }
 
 .off-screen-menu-nav {
-  margin-top: 24px;
+  margin-top: 16px;
   margin-bottom: 64px;
 }
 
@@ -71,3 +72,10 @@
 
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .off-screen-menu {
+    display: none;
+  }
+}
+
