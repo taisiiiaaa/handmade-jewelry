@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 64px;
+    gap: 32px;
     width: 100%;
     margin-bottom: 64px;
 }
@@ -21,7 +21,7 @@
     display: block;
     width: 217px;
     height: 93px;
-    color: #2b1a1a;
+    color: #000;
 }
 
 .footer-logo svg {
@@ -42,21 +42,25 @@
     padding: 6px;
 }
 
+.footer-social-item li {
+    padding: 6px;
+}
+
 .footer-social-item a {
     display: flex;
     align-items: center;
-    color: #2b1a1a;
-    transition: opacity 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    color: #000;
+    transition: color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .footer-social-item a,
 .footer-social-item a:visited {
-    color: #2b1a1a;
+    color: #000;
 }
 
 .footer-social-item a:hover,
 .footer-social-item a:focus {
-    opacity: 0.6;
+    color: #ccc16e;
 }
 
 .footer-social-item svg {
@@ -67,7 +71,7 @@
 
 .footer-nav {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .footer-nav-list {
@@ -83,7 +87,24 @@
     font-size: 18px;
     line-height: 1.5;
     color: #000;
-    transition: opacity 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.footer-nav-list a:hover,
+.footer-nav-list a:focus {
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+}
+
+.footer-nav-list a:active {
+    color: #8668c7;
+}
+
+.footer-nav-list a.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .footer-nav-list a,
@@ -91,25 +112,20 @@
     color: #000;
 }
 
-.footer-nav-list a:hover,
-.footer-nav-list a:focus {
-    opacity: 0.6;
-}
-
 .footer-copy {
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    color: #2b1a1a;
+    color: #000;
     margin: 0 16.5px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(43, 26, 26, 0.15);
+    padding-top: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
     .footer-section {
-        margin: 0 64px;
+        margin-right: 0 204px;
     }
 
     .footer-socials {
@@ -124,8 +140,12 @@
 
     .footer-copy {
         margin: 0 64px;
-        padding-top: 24px;
     }
+
+        .footer-nav-list a {
+            font-size: 16px;
+        }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -135,6 +155,7 @@
         align-items: flex-start;
         max-width: 1312px;
         margin: 0 64px;
+        
     }
 
     .footer-socials {
@@ -160,7 +181,6 @@
 
     .footer-nav {
         width: auto;
-        margin-bottom: 24px;
     }
 
     .footer-nav-list {
