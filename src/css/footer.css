@@ -1,12 +1,11 @@
 .footer {
-    background-color: #ffffff;
+    padding-block: 80px;
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px 16.5px 0;
 }
 
 .footer-socials {
@@ -55,13 +54,14 @@
     color: #2b1a1a;
 }
 
-.footer-social-item a:hover {
+.footer-social-item a:hover,
+.footer-social-item a:focus {
     opacity: 0.6;
 }
 
 .footer-social-item svg {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     fill: currentColor;
 }
 
@@ -78,19 +78,21 @@
 }
 
 .footer-nav-list a {
-    color: #2b1a1a;
-    font-size: 16px;
+    font-family: "Mulish", sans-serif;
     font-weight: 400;
+    font-size: 18px;
     line-height: 1.5;
+    color: #000;
     transition: opacity 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .footer-nav-list a,
 .footer-nav-list a:visited {
-    color: #2b1a1a;
+    color: #000;
 }
 
-.footer-nav-list a:hover {
+.footer-nav-list a:hover,
+.footer-nav-list a:focus {
     opacity: 0.6;
 }
 
@@ -100,18 +102,18 @@
     font-weight: 400;
     line-height: 1.5;
     color: #2b1a1a;
-    margin: 0 16.5px 157px;
+    margin: 0 16.5px;
     padding-top: 24px;
     border-top: 1px solid rgba(43, 26, 26, 0.15);
 }
 
 @media screen and (min-width: 768px) {
     .footer-section {
-        margin: 80px 64px 0;
+        margin: 0 64px;
     }
 
     .footer-socials {
-        gap: 64px;
+        gap: 32px;
         margin-bottom: 64px;
     }
 
@@ -121,7 +123,7 @@
     }
 
     .footer-copy {
-        margin: 0 64px 157px;
+        margin: 0 64px;
         padding-top: 24px;
     }
 }
@@ -132,7 +134,7 @@
         justify-content: space-between;
         align-items: flex-start;
         max-width: 1312px;
-        margin: 80px 64px 0;
+        margin: 0 64px;
     }
 
     .footer-socials {
@@ -167,7 +169,7 @@
     }
 
     .footer-copy {
-        margin: 0 64px 157px;
+        margin: 0 64px;
         padding-top: 24px;
     }
 }
