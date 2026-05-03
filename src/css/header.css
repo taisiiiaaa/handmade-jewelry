@@ -1,5 +1,6 @@
 .header {
   padding-block: 2px;
+  align-items: center;
 }
 
 .nav {
@@ -13,9 +14,14 @@
   font-size: 16px;
   line-height: 1.5;
   color: #000;
+  text-decoration: none;
+  transition:
+    color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    text-decoration 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
@@ -40,11 +46,11 @@
   background-color: transparent;
   cursor: pointer;
   position: relative;
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease;
+  transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .menu-toggle:focus-visible {
@@ -67,8 +73,8 @@
   transform-origin: center;
   border-radius: 2px;
   transition:
-    transform 0.3s ease,
-    opacity 0.2s ease;
+    transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    opacity 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transform: translate(-50%, -50%);
 }
 
@@ -133,8 +139,9 @@
 
   .nav-list {
     display: flex;
+    align-items: center;
     gap: 16px;
-    margin-left: 49px;
+    margin-left: 48px;
     margin-right: auto;
   }
 
@@ -148,5 +155,9 @@
   .nav-list {
     gap: 32px;
     margin-left: 32px;
+  }
+
+  .btn-order {
+    padding-inline: 55px;
   }
 }
