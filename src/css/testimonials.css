@@ -1,18 +1,12 @@
-.testimonials {
-  padding: 64px 0;
-}
-
 .testimonials-title {
-  max-width: 768px;
-  margin: 0 auto 24px;
+  margin-bottom: 24px;
   text-align: center;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.2;
   font-weight: 400;
 }
 
 .testimonials-text {
-  max-width: 768px;
   margin: 0 auto 80px;
   text-align: center;
   font-size: 16px;
@@ -22,10 +16,9 @@
 .testimonials-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 24px;
   max-width: 1312px;
-  margin: 0 auto;
-  list-style: none;
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -43,36 +36,38 @@
 .testimonials-card {
   min-height: 184px;
   padding: 32px;
-  background-color: #f7f7f7;
-  border: 1px solid #e0e0e0;
+  background-color: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  transition: transform 0.3s ease;
+  transition: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .testimonials-card:hover {
   transform: translateY(-5px);
 }
 .testimonials-review {
-  margin-bottom: 32px;
-  font-size: 16px;
+  margin-bottom: 24px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 .testimonials-name {
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .testimonials-stars {
   display: flex;
   gap: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .testimonials-star {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: #000;
 }
 
