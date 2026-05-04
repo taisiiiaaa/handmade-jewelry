@@ -1,0 +1,120 @@
+.testimonials-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.testimonials-text {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.testimonials-item {
+  overflow: hidden;
+}
+
+.testimonials-image img {
+  width: 100%;
+  height: 260px;
+  display: block;
+  object-fit: cover;
+}
+
+.testimonials-card {
+  min-height: 184px;
+  padding: 32px;
+  background-color: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.testimonials-card:hover {
+  transform: translateY(-5px);
+}
+.testimonials-review {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.testimonials-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.testimonials-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.testimonials-star {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .testimonials-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .testimonials-image img {
+    height: 260px;
+  }
+
+  .testimonials-card {
+    min-height: 260px;
+    padding: 32px;
+  }
+  .testimonials-item:nth-child(3),
+  .testimonials-item:nth-child(4) {
+    grid-column: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .testimonials-title {
+    font-size: 48px;
+  }
+
+  .testimonials-text {
+    margin-bottom: 80px;
+  }
+
+  .testimonials-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+
+  .testimonials-item:nth-child(3),
+  .testimonials-item:nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .testimonials-image img {
+    height: 260px;
+  }
+
+  .testimonials-card {
+    min-height: 260px;
+    padding: 48px;
+  }
+}
