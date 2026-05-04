@@ -1,3 +1,57 @@
-<section class="about-us section">
-  <div class="container"></div>
+<section class="about-us section" id="about-us">
+  <div class="container">
+    <picture class="about-us-img">
+      <!-- Desktop: screen width >= 1440px -->
+      <source
+        srcset="/img/about-us-desk@1x.jpg 1x, /img/about-us-desk@2x.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+
+      <!-- Tablet: screen width >= 768px -->
+      <source
+        srcset="/img/about-us-tab@1x.jpg 1x, /img/about-us-tab@2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        media="(max-width: 767px)"
+        srcset="/img/about-us-mob@1x.jpg 1x, /img/about-us-mob@2x.jpg 2x"
+      />
+
+      <!-- Mobile -->
+      <img
+        src="/img/about-us-mob@1x.jpg"
+        srcset="/img/about-us-mob@1x.jpg 1x, /img/about-us-mob@2x.jpg 2x"
+        alt="Handmade Jewelry Process"
+        loading="lazy"
+        width="335"
+        height="335"
+      />
+    </picture>
+
+    <div class="about-description">
+      <h2 class="about-title">The Artistry Behind Handmade Jewelry</h2>
+
+      <p class="about-text">
+        Handmade Jewelry began as a passion project, inspired by the beauty of
+        nature and the desire to create meaningful pieces. Each item is crafted
+        with love, reflecting our commitment to sustainability and the unique
+        story of its maker.
+      </p>
+
+      <ul class="about-list">
+        <li class="about-item">
+          <p class="about-item-text leaf">Inspired by Nature</p>
+        </li>
+
+        <li class="about-item">
+          <p class="about-item-text donate">Handcrafted with Love</p>
+        </li>
+
+        <li class="about-item">
+          <p class="about-item-text book">Every Piece Tells a Story</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
