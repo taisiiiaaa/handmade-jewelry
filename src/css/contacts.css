@@ -131,6 +131,15 @@ address {
   border-color: #ccc16e;
 }
 
+.contacts-form-input:invalid {
+  border-color: #d32f2f;
+  background: rgba(211, 47, 47, 0.03);
+}
+
+.contacts-form-input:invalid:focus {
+  border-color: #d32f2f;
+}
+
 .contacts-form-textarea {
   height: 180px;
   resize: none;
