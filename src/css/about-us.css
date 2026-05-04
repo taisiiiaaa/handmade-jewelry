@@ -59,18 +59,13 @@
   margin-right: 8px;
 }
 .about-item-text {
-  position: relative;
-  padding-left: 40px;
-  min-height: 24px;
   display: flex;
   align-items: center;
 }
 .about-item-text::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
+  margin-right: 8px;
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
