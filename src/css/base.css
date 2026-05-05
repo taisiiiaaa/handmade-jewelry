@@ -9,6 +9,10 @@ body {
   line-height: 1.5;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .section {
   padding-block: 64px;
 }
