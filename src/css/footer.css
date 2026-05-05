@@ -50,8 +50,8 @@
 }
 
 .footer-social-item a:hover,
-.footer-social-item a:active,
-.footer-social-item a:focus {
+.footer-social-item a:focus,
+.footer-social-item a:active {
     color: #ccc16e;
 }
 
@@ -170,7 +170,6 @@
     }
 
     .footer-copy {
-        margin: 0 64px;
         padding-top: 24px;
     }
 }
