@@ -84,9 +84,17 @@
     min-height: 260px;
     padding: 32px;
   }
-  .testimonials-item:nth-child(3),
-  .testimonials-item:nth-child(4) {
-    grid-column: auto;
+  .testimonials-review {
+    font-size: 16px;
+  }
+
+  .testimonials-stars {
+    margin-bottom: 16px;
+  }
+
+  .testimonials-star {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -116,5 +124,17 @@
   .testimonials-card {
     min-height: 260px;
     padding: 48px;
+  }
+  .testimonials-review {
+    font-size: 18px;
+  }
+
+  .testimonials-stars {
+    margin-bottom: 24px;
+  }
+
+  .testimonials-star {
+    width: 24px;
+    height: 24px;
   }
 }
